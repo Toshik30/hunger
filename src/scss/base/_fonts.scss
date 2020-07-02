@@ -1,6 +1,11 @@
 @font-face {
-	font-family: "Montserrat";
-	src: url("../src/fonts/Montserrat-Regular.ttf") format("opentype");
+	font-family: "Open Sans";
+	src: url("../src/fonts/OpenSans-Regular.ttf") format("opentype");
 }
-$primary-font: Montserrat, sans-serif;
+@font-face {
+	font-family: "Banny";
+	src: url("../src/fonts/Banny-BoldRound.otf") format("opentype");
+}
+$secondary-font: Banny;
+$primary-font: Open-Sans, sans-serif;
 

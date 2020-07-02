@@ -1,3 +1,87 @@
 @import "../base/variables";
 
+.header {
+	height: 100vh;
+	background: url(/images/header-bg.png) no-repeat;
+	background-size: cover;
+}
+nav {
+	display: flex;
+	justify-content: space-between;
+	color: white;
+	padding-top: 20px;
+	text-transform: uppercase;
+	font-weight: bold;
+	font-size: 12px;
 
+	ul {
+		justify-content: space-between;
+		display: flex;
+		padding-top: 20px;
+    	padding-left: 0;
+	}
+	li {
+		margin: 0 40px;
+
+		&:hover {
+			color: $primary;
+		}
+	}
+}
+.logotype {
+	padding-top: 35px;
+}
+.hungry {
+	display: flex;
+	justify-content: space-between;
+	margin-top: 100px;
+
+	span {
+		transform: rotate(180deg);
+		writing-mode: tb-rl;
+	}
+}
+.round {
+	width: 60px;
+	height: 60px;
+	border: 1px solid rgba(255, 255, 255, 0.2);
+	border-radius: 50%;
+	margin-bottom: 15px;
+	display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+.social {
+	display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.restaurant {
+	text-transform: uppercase;
+	text-align: center;
+	margin-top: 40px;
+	position: relative;
+
+	&::before {
+		content: '';
+		border-bottom: 4px solid $primary;
+		width: 60px;
+		color: $primary;
+		position: absolute;
+		top: 57%;
+    	left: calc(398px - 30px);
+	}
+
+	p {
+		letter-spacing: 0.5em;
+		font-size: 12px;
+		font-weight: bold;
+	}
+	h1 {
+		margin-top: 18px;
+	}
+}
+.secondary-btn {
+	margin-left: 40px;
+}
