@@ -8,10 +8,40 @@
 </head>
 <body>
 	<%= _.template(require('./includes/header.html').default)(data) %>
+	<%= _.template(require('./includes/about-us.html').default)(data) %>
 	
-
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.0/jquery.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
+<script>
+
+	$('.coruseul').slick({
+	  dots: true,
+	  infinite: true,
+	  slidesToShow: 1,
+	  slidesToScroll: 1,
+	  arrows: false,
+	  speed:300
+	});
+
+	$('.autoplay').slick({
+	  slidesToShow: 4,
+	  slidesToScroll: 1,
+	  autoplay: true,
+	  autoplaySpeed: 2000,
+	  dots: false,
+	  arrows:false
+	});
+
+
+// $('.one-time').slick({
+//   dots: true,
+//   infinite: true,
+//   arrows:false,
+//   speed: 300,
+//   slidesToShow: 1,
+//   adaptiveHeight: false
+// });
+</script>
 
 </body>
 </html>
